@@ -7,6 +7,7 @@ $(function () {
 var today = dayjs();
 $('#today').text(today.format('MMM D, YYYY'));
 
+console.log("display todays date");
 
   //Gets hour from each of the time blocks and compares it to current time
   $(".time-block").each(function () {
@@ -22,6 +23,8 @@ $('#today').text(today.format('MMM D, YYYY'));
     }
   });
 
+  console.log("show time blocks status");
+
   // saves data to be used in localStorage; event listener
   $(".saveBtn").on("click", function () {
     var saveIndex = $(this).parent().attr("id");
@@ -30,6 +33,8 @@ $('#today').text(today.format('MMM D, YYYY'));
     // This saves it in local storage
     localStorage.setItem(saveIndex, inputValue);
   });
+
+  console.log("save data locally");
 
   //Gets items from local storage and sets them in places
   $("#hour-09 .description").val(localStorage.getItem("hour-09"));
