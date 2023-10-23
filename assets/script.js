@@ -10,20 +10,20 @@ $('#today').text(today.format('MMM D, YYYY'));
 
   //Gets hour from each of the time blocks and compares it to current time
   $(".time-block").each(function () {
-    var timeBlock = $(this).attr("id").split("-")[1];
-    var currentHour = (dayjs().hour("HH"));
+    var timeBlock = $(this).attr("id");
+    var currentHour = (dayjs().hour("H"));
 
     if (currentHour == timeBlock) {
-      item.classList.add("present");
+      item.classList.toggle("present");
     } else if (currentHour < timeBlock) {
-      item.classList.add("future");
+      item.classList.toggle("future");
     } else if (currentHour > timeBlock) {
-      item.classList.add("past");
+      item.classList.toggle("past");
     }
   });
 
   // saves data to be used in localStorage; event listener
-  $(".saveBtn").on("click", function() {
+  $(".saveBtn").on("click", function () {
     var saveIndex = $(this).parent().attr("id");
     var inputValue = $(this).siblings(".description").val();
     
@@ -32,7 +32,7 @@ $('#today').text(today.format('MMM D, YYYY'));
   });
 
   //Gets items from local storage and sets them in places
-  $("#hour-09 .description").val(localStorage.getItem("hour-9"));
+  $("#hour-09 .description").val(localStorage.getItem("hour-09"));
   $("#hour-10 .description").val(localStorage.getItem("hour-10"));
   $("#hour-11 .description").val(localStorage.getItem("hour-11"));
   $("#hour-12 .description").val(localStorage.getItem("hour-12"));
@@ -41,4 +41,4 @@ $('#today').text(today.format('MMM D, YYYY'));
   $("#hour-15 .description").val(localStorage.getItem("hour-15"));
   $("#hour-16 .description").val(localStorage.getItem("hour-16"));
   $("#hour-17 .description").val(localStorage.getItem("hour-17"));
-})
+});
