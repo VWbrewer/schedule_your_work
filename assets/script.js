@@ -1,3 +1,12 @@
+// Use Day.js to format the date
+var today = dayjs();
+$('#today').text(today.format('MMM D, YYYY'));
+
+
+
+
+
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -24,9 +33,7 @@ $(function () {
 
 
 
-// Use Day.js to format the date
-var today = dayjs();
-$('#today').text(today.format('MMM D, YYYY'));
+
 
 
 
@@ -46,6 +53,13 @@ $('#today').text(today.format('MMM D, YYYY'));
 // loads any existing local storage data after they are made
 init();
 
+
+    // creates save button
+    var saveButton = $("<i class='far fa-save fa-lg'></i>")
+    var savePlan = $("<button>")
+        .attr({
+            "class": "col-md-1 saveBtn"
+        });
 
 // saves data to be used in localStorage
 $(".saveBtn").on("click", function(event) {
