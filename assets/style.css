@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-textarea {
+.textarea {
   background: transparent;
   border: none;
   resize: none;
