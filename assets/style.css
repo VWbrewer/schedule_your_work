@@ -3,6 +3,12 @@ body {
   font-size: 16px;
 }
 
+#today {
+  color: rgb(12, 31, 201);
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
 textarea {
   background: transparent;
   border: none;

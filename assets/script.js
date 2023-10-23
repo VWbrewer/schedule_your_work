@@ -24,4 +24,35 @@ $(function () {
 
 
 
+// Use Day.js to format the date
+var today = dayjs();
+$('#today').text(today.format('MMM D, YYYY'));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// loads any existing local storage data after they are made
+init();
+
+
+// saves data to be used in localStorage
+$(".saveBtn").on("click", function(event) {
+  event.preventDefault();
+  var saveIndex = $(this).siblings(".description").children(".future").attr("id");
+  myDay[saveIndex].reminder = $(this).siblings(".description").children(".future").val();
+  console.log(saveIndex);
+  saveReminders();
+  displayReminders();
+})
