@@ -11,6 +11,8 @@ This is a great for anyone struggling to keep track of what they need to do duri
 
 <a href="https://github.com/VWbrewer/schedule_your_work"> Work Scheduler </a>
 
+https://vwbrewer.github.io/schedule_your_work/
+
 On this site you will enter what you have planed for each hour of you work day. After entering your information for that hour click on the save icon to save that entry.
 
 
