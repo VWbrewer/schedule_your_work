@@ -1,12 +1,18 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  font: bold;
+}
+
+header {
+  background:#d19f32
 }
 
 #today {
   color: rgb(12, 31, 201);
   font-size: 35px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 textarea {
@@ -27,13 +33,16 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 2px solid silver;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #6f7485;
   color: #000000;
   border-top: 1px dashed #000000;
+  border-right: 5px solid black;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .past {
@@ -52,10 +61,10 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 5px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #1b7c92;
   color: white;
 }
 
