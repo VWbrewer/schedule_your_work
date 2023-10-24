@@ -3,6 +3,10 @@ Application to schedule your work by creating a list that can be saved
 
 
 ## Description
+This application is for scheduling your day. You are able to schedule be each hour during typical business hours.
+I made this to help me organize and plan my day, so that I am not over booked. I learned that there are lots of sources that can be used for api's. 
+
+
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
