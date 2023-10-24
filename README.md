@@ -5,37 +5,29 @@ Application to schedule your work by creating a list that can be saved
 ## Description
 This application is for scheduling your day. You are able to schedule be each hour during typical business hours.
 I made this to help me organize and plan my day, so that I am not over booked. I learned that there are lots of sources that can be used for api's. 
-
-
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This is a great for anyone struggling to keep track of what they need to do during the day.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+<a href="https://github.com/VWbrewer/schedule_your_work"> Work Scheduler </a>
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+On this site you will enter what you have planed for each hour of you work day. After entering your information for that hour click on the save icon to save that entry.
 
-![alt text](assets/images/screenshot.png)
+
+![example 1](assets\images\Screenshot 2023-10-23 195421.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
 I worked with Travis Celli,  https://github.com/RaszeroT
-Andrew Hudgins a TA provided insight into my codding 
 
+Andrew Hudgins a TA provided insight into my codding
+
+Joshua Diehl a TA provided help with time information and color coding
 
 https://demo.mobiscroll.com/jquery/scheduler/mobile-day-view#
 
 
 ## License
-
 MIT License
 
 Copyright (c) [2023] [Christopher Brewer]
