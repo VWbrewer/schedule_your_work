@@ -14,7 +14,8 @@ This is a great for anyone struggling to keep track of what they need to do duri
 On this site you will enter what you have planed for each hour of you work day. After entering your information for that hour click on the save icon to save that entry.
 
 
-![assets\images\Screenshot 2023-10-23 195421.png]
+![alt text](<assets\images\Screenshot 2023-10-23 195421.png>)
+
 
 ## Credits
 
