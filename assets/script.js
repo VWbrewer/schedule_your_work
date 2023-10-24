@@ -12,14 +12,21 @@ console.log("display todays date");
   //Gets hour from each of the time blocks and compares it to current time
   $(".time-block").each(function () {
     var timeBlock = $(this).attr("id");
-    var currentHour = (dayjs().hour("H"));
+    
+    var blockHour = Number(timeBlock.split("-")[1]);
+    
+    console.log(blockHour);
 
-    if (currentHour == timeBlock) {
-      item.classList.toggle("present");
-    } else if (currentHour < timeBlock) {
-      item.classList.toggle("future");
-    } else if (currentHour > timeBlock) {
-      item.classList.toggle("past");
+    var currentHour = dayjs().hour();
+    console.log(typeof currentHour)
+    console.log(currentHour)
+
+    if (currentHour == blockHour) {
+      $(this).attr("class", "present row time-block");
+    } else if (currentHour < blockHour) {
+      $(this).attr("class", "future row time-block");
+    } else if (currentHour > blockHour) {
+      $(this).attr("class", "past row time-block");
     }
   });
 
